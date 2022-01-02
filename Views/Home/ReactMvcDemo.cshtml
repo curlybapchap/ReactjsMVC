@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "React MVC Demo";
+}
+<style>
+    input[type=checkbox] {
+        width: 1.5em;
+        height: 1.5em;
+    }
+
+    .maintSection {
+        margin: 20px 0px 10px 0px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 20px;
+    }
+</style>
+
+<div id="UsersListContainer" style="display:none;margin-top:20px;">
+    <table style="width:75%">
+        <thead>
+            <tr>
+                <th>User Name</th>
+                <th>Display Name</th>
+                <th>Enabled</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="userRecords">
+        </tbody>
+    </table>
+</div>
+<div id="EditRecord" style="width:fit-content;display:none"></div>
+
+<script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+<script src="~/Scripts/ReactjsMVC/reactDemo.js" type="module"></script>
